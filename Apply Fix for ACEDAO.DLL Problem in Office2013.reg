@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+; OffCAT shows a warning about the registry registration for the ACEDAO.DLL file
+; indicating that the dll isn't registered correctly. It gives three options for
+; fixing the issue. The first option is to apply the following registry key. The
+; next is to download and install Microsoft Fix it 20082 for  Windows  8.  Then,
+; final option is to "Fix it myself" by applying *both* of these registry
+; tweaks. 
+
+; Options 1 or 3 (by hand), or 2 (automatic).
+[HKEY_CLASSES_ROOT\TypeLib\{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}\c.0\0\win32]
+@="C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\OFFICE14\\ACEDAO.DLL"
+
+; Option 2 (automatic) and 3 (manual).
+[HKEY_CLASSES_ROOT\TypeLib\{00025E01-0000-0000-C000-000000000046}\5.0\0\win32]
+@=hex(2):25,00,43,00,6f,00,6d,00,6d,00,6f,00,6e,00,50,00,72,00,6f,00,67,00,72,\
+  00,61,00,6d,00,46,00,69,00,6c,00,65,00,73,00,28,00,78,00,38,00,36,00,29,00,\
+  25,00,5c,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,00,20,00,53,\
+  00,68,00,61,00,72,00,65,00,64,00,5c,00,44,00,41,00,4f,00,5c,00,64,00,61,00,\
+  6f,00,33,00,36,00,30,00,2e,00,64,00,6c,00,6c,00,00,00

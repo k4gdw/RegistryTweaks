@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+
+; Use this file to undo the tweaks put in place by the 
+; Apply Fix for ACEDAO.DLL Problem in Office2013
+
+; Options 1 or 3 (by hand), or 2 (automatic).
+[-HKEY_CLASSES_ROOT\TypeLib\{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}\c.0\0\win32]
+
+; Option 2 (automatic) and 3 (manual).
+[-HKEY_CLASSES_ROOT\TypeLib\{00025E01-0000-0000-C000-000000000046}\5.0\0\win32]
